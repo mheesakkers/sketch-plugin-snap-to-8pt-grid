@@ -1,7 +1,7 @@
 {
   "name": "SnapTo8ptGrid",
   "description": "A Sketch plugin which helps with snapping layer properties to the 8 point grid.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "engines": {
     "sketch": ">=49.0"
   },
