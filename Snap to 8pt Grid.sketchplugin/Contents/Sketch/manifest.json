@@ -39,7 +39,7 @@
       "script": "__snap-vertical.js"
     },
     {
-      "name": "Snap",
+      "name": "Snap everything",
       "description": "Snap width / height and x / y position of layer to the 8 point grid",
       "identifier": "snap-to-everything",
       "script": "__snap-to-everything.js"
@@ -64,7 +64,6 @@
       "snap-to-y",
       "snap-width",
       "snap-height",
-      "snap-width",
       "snap-vertical",
       "snap-to-everything",
       "snap-font-size",
@@ -72,11 +71,11 @@
     ]
   },
   "version": "0.1.0",
-  "description": "",
+  "description": "A Sketch plugin which helps with snapping layer properties to the 8 point grid.",
   "name": "SnapTo8ptGrid",
   "identifier": "SnapTo8ptGrid",
   "disableCocoaScriptPreprocessor": true,
-  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml",
+  "appcast": "https://raw.githubusercontent.com/mheesakkers/sketch-plugin-snap-to-8pt-grid/master/.appcast.xml",
   "author": "Misha Heesakkers",
   "authorEmail": "misha.heesakkers@gmail.com"
 }

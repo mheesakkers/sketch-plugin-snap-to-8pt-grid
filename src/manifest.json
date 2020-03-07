@@ -39,7 +39,7 @@
       "script": "./snap-vertical.js"
     },
     {
-      "name": "Snap",
+      "name": "Snap everything",
       "description": "Snap width / height and x / y position of layer to the 8 point grid",
       "identifier": "snap-to-everything",
       "script": "./snap-to-everything.js"
@@ -63,8 +63,7 @@
       "snap-to-x", 
       "snap-to-y", 
       "snap-width", 
-      "snap-height",
-      "snap-width", 
+      "snap-height", 
       "snap-vertical",
       "snap-to-everything",
       "snap-font-size",
