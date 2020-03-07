@@ -1,0 +1,74 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Snap X",
+      "description": "Snap X position of layer to the 8 point grid",
+      "identifier": "snap-to-x",
+      "script": "./snap-to-x.js"
+    },
+    {
+      "name": "Snap Y",
+      "description": "Snap Y position of layer to the 8 point grid",
+      "identifier": "snap-to-y",
+      "script": "./snap-to-y.js"
+    },
+    {
+      "name": "Snap Width",
+      "description": "Snap width of layer to the 8 point grid",
+      "identifier": "snap-width",
+      "script": "./snap-width.js"
+    },
+    {
+      "name": "Snap Height",
+      "description": "Snap height of layer to the 8 point grid",
+      "identifier": "snap-height",
+      "script": "./snap-height.js"
+    },
+    {
+      "name": "Snap Horizontal",
+      "description": "Snap width and x position of layer to the 8 point grid",
+      "identifier": "snap-horizontal",
+      "script": "./snap-horizontal.js"
+    },
+    {
+      "name": "Snap Vertical",
+      "description": "Snap height and y position of layer to the 8 point grid",
+      "identifier": "snap-vertical",
+      "script": "./snap-vertical.js"
+    },
+    {
+      "name": "Snap",
+      "description": "Snap width / height and x / y position of layer to the 8 point grid",
+      "identifier": "snap-to-everything",
+      "script": "./snap-to-everything.js"
+    },
+    {
+      "name": "Snap Font size",
+      "description": "Snap font size of Text layer to the 8 point grid",
+      "identifier": "snap-font-size",
+      "script": "./snap-font-size.js"
+    },
+    {
+      "name": "Snap Line-height",
+      "description": "Snap line-height of Text layer to the 8 point grid",
+      "identifier": "snap-line-height",
+      "script": "./snap-line-height.js"
+    }
+  ],
+  "menu": {
+    "title": "Snap to 8pt Grid",
+    "items": [
+      "snap-to-x", 
+      "snap-to-y", 
+      "snap-width", 
+      "snap-height",
+      "snap-width", 
+      "snap-vertical",
+      "snap-to-everything",
+      "snap-font-size",
+      "snap-line-height"
+    ]
+  }
+}
