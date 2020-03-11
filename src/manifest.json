@@ -7,69 +7,63 @@
     {
       "name": "Snap X",
       "description": "Snap X position of layer to the 8 point grid",
-      "identifier": "snap-to-x",
-      "script": "./snap-to-x.js"
+      "identifier": "snap-x",
+      "script": "./snap.js"
     },
     {
       "name": "Snap Y",
       "description": "Snap Y position of layer to the 8 point grid",
-      "identifier": "snap-to-y",
-      "script": "./snap-to-y.js"
+      "identifier": "snap-y",
+      "script": "./snap.js"
     },
     {
       "name": "Snap Width",
       "description": "Snap width of layer to the 8 point grid",
       "identifier": "snap-width",
-      "script": "./snap-width.js"
+      "script": "./snap.js"
     },
     {
       "name": "Snap Height",
       "description": "Snap height of layer to the 8 point grid",
       "identifier": "snap-height",
-      "script": "./snap-height.js"
+      "script": "./snap.js"
     },
     {
       "name": "Snap Horizontal",
       "description": "Snap width and x position of layer to the 8 point grid",
-      "identifier": "snap-horizontal",
-      "script": "./snap-horizontal.js"
+      "identifier": "snap-width-x",
+      "script": "./snap.js"
     },
     {
       "name": "Snap Vertical",
       "description": "Snap height and y position of layer to the 8 point grid",
-      "identifier": "snap-vertical",
-      "script": "./snap-vertical.js"
-    },
-    {
-      "name": "Snap everything",
-      "description": "Snap width / height and x / y position of layer to the 8 point grid",
-      "identifier": "snap-to-everything",
-      "script": "./snap-to-everything.js"
+      "identifier": "snap-height-y",
+      "script": "./snap.js"
     },
     {
       "name": "Snap Font size",
       "description": "Snap font size of Text layer to the 8 point grid",
-      "identifier": "snap-font-size",
-      "script": "./snap-font-size.js"
+      "identifier": "snap-fontSize",
+      "script": "./snap.js"
     },
     {
       "name": "Snap Line-height",
       "description": "Snap line-height of Text layer to the 8 point grid",
-      "identifier": "snap-line-height",
-      "script": "./snap-line-height.js"
+      "identifier": "snap-lineHeight",
+      "script": "./snap.js"
     }
   ],
   "menu": {
     "title": "Snap to 8pt Grid",
     "items": [
-      "snap-to-x", 
-      "snap-to-y", 
+      "snap-x", 
+      "snap-y", 
       "snap-width", 
-      "snap-height", 
-      "snap-vertical",
-      "snap-to-everything",
-      "snap-font-size",
-      "snap-line-height"
+      "snap-height",
+      "snap-width-x", 
+      "snap-height-y",
+      "snap-fontSize",
+      "snap-lineHeight"
     ]
   }
 }

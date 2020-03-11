@@ -1,78 +1,72 @@
 {
   "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "name": "Snap to 8pt Grid",
+  "description": "A Sketch plugin which helps with snapping layer properties to the 8 point grid.",
   "icon": "icon.png",
   "commands": [
     {
       "name": "Snap X",
       "description": "Snap X position of layer to the 8 point grid",
-      "identifier": "snap-to-x",
-      "script": "__snap-to-x.js"
+      "identifier": "snap-x",
+      "script": "__snap.js"
     },
     {
       "name": "Snap Y",
       "description": "Snap Y position of layer to the 8 point grid",
-      "identifier": "snap-to-y",
-      "script": "__snap-to-y.js"
+      "identifier": "snap-y",
+      "script": "__snap.js"
     },
     {
       "name": "Snap Width",
       "description": "Snap width of layer to the 8 point grid",
       "identifier": "snap-width",
-      "script": "__snap-width.js"
+      "script": "__snap.js"
     },
     {
       "name": "Snap Height",
       "description": "Snap height of layer to the 8 point grid",
       "identifier": "snap-height",
-      "script": "__snap-height.js"
+      "script": "__snap.js"
     },
     {
       "name": "Snap Horizontal",
       "description": "Snap width and x position of layer to the 8 point grid",
-      "identifier": "snap-horizontal",
-      "script": "__snap-horizontal.js"
+      "identifier": "snap-width-x",
+      "script": "__snap.js"
     },
     {
       "name": "Snap Vertical",
       "description": "Snap height and y position of layer to the 8 point grid",
-      "identifier": "snap-vertical",
-      "script": "__snap-vertical.js"
-    },
-    {
-      "name": "Snap everything",
-      "description": "Snap width / height and x / y position of layer to the 8 point grid",
-      "identifier": "snap-to-everything",
-      "script": "__snap-to-everything.js"
+      "identifier": "snap-height-y",
+      "script": "__snap.js"
     },
     {
       "name": "Snap Font size",
       "description": "Snap font size of Text layer to the 8 point grid",
-      "identifier": "snap-font-size",
-      "script": "__snap-font-size.js"
+      "identifier": "snap-fontSize",
+      "script": "__snap.js"
     },
     {
       "name": "Snap Line-height",
       "description": "Snap line-height of Text layer to the 8 point grid",
-      "identifier": "snap-line-height",
-      "script": "__snap-line-height.js"
+      "identifier": "snap-lineHeight",
+      "script": "__snap.js"
     }
   ],
   "menu": {
     "title": "Snap to 8pt Grid",
     "items": [
-      "snap-to-x",
-      "snap-to-y",
+      "snap-x",
+      "snap-y",
       "snap-width",
       "snap-height",
-      "snap-vertical",
-      "snap-to-everything",
-      "snap-font-size",
-      "snap-line-height"
+      "snap-width-x",
+      "snap-height-y",
+      "snap-fontSize",
+      "snap-lineHeight"
     ]
   },
-  "version": "0.1.0",
-  "description": "A Sketch plugin which helps with snapping layer properties to the 8 point grid.",
-  "name": "SnapTo8ptGrid",
+  "version": "1.0.0",
   "identifier": "SnapTo8ptGrid",
   "disableCocoaScriptPreprocessor": true,
   "appcast": "https://raw.githubusercontent.com/mheesakkers/sketch-plugin-snap-to-8pt-grid/master/.appcast.xml",

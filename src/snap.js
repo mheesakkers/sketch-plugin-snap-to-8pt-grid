@@ -1,12 +1,19 @@
 import { Document, UI } from 'sketch'
 
-export default function snapTo (...args) {
+export default function snap (context) {
 	var document = Document.getSelectedDocument()
 	var selection = document.selectedLayers
 
 	if (!selection.isEmpty) {
 		
-		args.forEach(type => {
+		// !important Specify type which gets snapped in manifests identifiers
+		let commands = [ context.command.identifier().replace('snap-','') ]
+
+		// Split up if there are multiple types to snap to
+		commands = commands[0].split("-")
+
+		// Snap
+		commands.forEach(type => {
 			selection.layers.forEach(layer => {
 				let key = "frame"
 				
@@ -25,6 +32,9 @@ export default function snapTo (...args) {
 
 			})
 		})
+
+		// Message
+		UI.message("👌Snap!")
 
 	} else {
 		UI.message("It seems you haven't selected any layers")
