@@ -32,3 +32,4 @@ _This plugin was created using `skpm`. For a detailed explanation on how things 
 ## To Do / Idea's
 
 - Snapping of paths
+- Add keyboard shortcuts
