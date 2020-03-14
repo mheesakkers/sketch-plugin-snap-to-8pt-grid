@@ -21,7 +21,7 @@ A Sketch plugin which helps with snapping layer properties to the 8 point grid.
 
 ## Installation
 
-- [Download](../../releases/latest/download/snap-to-8pt-grid.sketchplugin.zip) the latest release of the plugin
+- [Download](../../releases/latest/download/Snap.to.8pt.Grid.sketchplugin.zip) the latest release of the plugin
 - Un-zip
 - Double-click on snapper.sketchplugin
 
