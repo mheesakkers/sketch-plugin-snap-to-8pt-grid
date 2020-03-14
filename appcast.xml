@@ -6,8 +6,13 @@
     <description>A Sketch plugin which helps with snapping layer properties to the 8 point grid.</description>
     <language>en</language>
     <item>
-      <title>Version 1.0.0</title>
+      <title>Version 1.0.1</title>
       <description>Initial release of the plugin</description>
+      <enclosure url="https://github.com/mheesakkers/sketch-plugin-snap-to-8pt-grid/releases/download/v.1.0.1/Snap.to.8pt.Grid.sketchplugin.zip" sparkle:version="1.0.1"/>
+    </item>
+    <item>
+      <title>Beta</title>
+      <description>Beta release</description>
       <enclosure url="https://github.com/mheesakkers/sketch-plugin-snap-to-8pt-grid/releases/download/v.1.0.0/Snap.to.8pt.Grid.sketchplugin.zip" sparkle:version="1.0.0"/>
     </item>
   </channel>

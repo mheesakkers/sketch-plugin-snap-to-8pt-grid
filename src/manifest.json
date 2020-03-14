@@ -1,9 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
   "name" : "Snap to 8pt Grid",
+  "version" : "1.0.1",
   "description": "A Sketch plugin which helps with snapping layer properties to the 8 point grid.",
   "icon": "icon.png",
   "appcast" : "https://raw.githubusercontent.com/mheesakkers/sketch-plugin-snap-to-8pt-grid/master/appcast.xml",
+  "authorEmail" : "misha.heesakkers@gmail.com",
+  "author" : "Misha Heesakkers",
   "commands": [
     {
       "name": "Snap X",
