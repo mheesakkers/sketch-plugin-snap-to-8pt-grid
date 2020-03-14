@@ -8,7 +8,7 @@ A Sketch plugin which helps with snapping layer properties to the 8 point grid.
 
 ## Usage
 1. Select any type of layer (or make a selection)
-2. Choose one of the snapping commands from the menu
+2. Choose one of the snapping commands from the menu or use Runner ;)
 3. Boom! Your layer property is snapped to the 8pt grid😎
 
 ## Layer properties that can be snapped
