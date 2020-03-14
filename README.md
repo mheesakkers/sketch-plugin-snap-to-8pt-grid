@@ -31,5 +31,4 @@ _This plugin was created using `skpm`. For a detailed explanation on how things 
 
 ## To Do / Idea's
 
-- Enhance Readme
-- Create custom icons per command
+- Snapping of paths
