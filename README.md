@@ -1,3 +1,5 @@
+<img height="128" width="128" src="https://github.com/mheesakkers/sketch-plugin-snap-to-8pt-grid/blob/master/assets/icon.png">
+
 # Snap to 8pt Grid
 
 A Sketch plugin which helps with snapping layer properties to the 8 point grid.
