@@ -13,54 +13,69 @@
       "description": "Snap X position of layer to the 8 point grid",
       "identifier": "snap-x",
       "icon": "snap-x.png",
-      "script": "__snap.js"
+      "script": "__snap.js",
+      "handler": "snap"
     },
     {
       "name": "Snap Y",
       "description": "Snap Y position of layer to the 8 point grid",
       "identifier": "snap-y",
       "icon": "snap-y.png",
-      "script": "__snap.js"
+      "script": "__snap.js",
+      "handler": "snap"
     },
     {
       "name": "Snap Width",
       "description": "Snap width of layer to the 8 point grid",
       "identifier": "snap-width",
       "icon": "snap-width.png",
-      "script": "__snap.js"
+      "script": "__snap.js",
+      "handler": "snap"
     },
     {
       "name": "Snap Height",
       "description": "Snap height of layer to the 8 point grid",
       "identifier": "snap-height",
       "icon": "snap-height.png",
-      "script": "__snap.js"
+      "script": "__snap.js",
+      "handler": "snap"
     },
     {
       "name": "Snap Horizontal",
       "description": "Snap width and x position of layer to the 8 point grid",
       "identifier": "snap-width-x",
-      "script": "__snap.js"
+      "script": "__snap.js",
+      "handler": "snap"
     },
     {
       "name": "Snap Vertical",
       "description": "Snap height and y position of layer to the 8 point grid",
       "identifier": "snap-height-y",
-      "script": "__snap.js"
+      "script": "__snap.js",
+      "handler": "snap"
     },
     {
       "name": "Snap Font size",
       "description": "Snap font size of Text layer to the 8 point grid",
       "identifier": "snap-fontSize",
       "icon": "snap-fontSize.png",
-      "script": "__snap.js"
+      "script": "__snap.js",
+      "handler": "snap"
     },
     {
       "name": "Snap Line-height",
       "description": "Snap line-height of Text layer to the 8 point grid",
       "identifier": "snap-lineHeight",
       "icon": "snap-lineHeight.png",
-      "script": "__snap.js"
+      "script": "__snap.js",
+      "handler": "snap"
+    },
+    {
+      "name": "⚙️ Settings",
+      "description": "Change settings of the point grid",
+      "identifier": "settings",
+      "script": "__snap.js",
+      "handler": "settings"
     }
   ],
   "menu": {
@@ -73,7 +88,8 @@
       "snap-width-x",
       "snap-height-y",
       "snap-fontSize",
-      "snap-lineHeight"
+      "snap-lineHeight",
+      "settings"
     ]
   },
   "identifier": "SnapTo8ptGrid",

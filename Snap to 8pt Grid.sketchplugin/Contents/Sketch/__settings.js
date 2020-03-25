@@ -88,78 +88,27 @@ var exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/snap.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/settings.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/snap.js":
-/*!*********************!*\
-  !*** ./src/snap.js ***!
-  \*********************/
-/*! exports provided: snap, settings */
+/***/ "./src/settings.js":
+/*!*************************!*\
+  !*** ./src/settings.js ***!
+  \*************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "snap", function() { return snap; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "settings", function() { return settings; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return settings; });
 /* harmony import */ var sketch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! sketch */ "sketch");
 /* harmony import */ var sketch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(sketch__WEBPACK_IMPORTED_MODULE_0__);
 
-function snap(context) {
-  // Document & Selection
-  var document = sketch__WEBPACK_IMPORTED_MODULE_0__["Document"].getSelectedDocument();
-  var selection = document.selectedLayers; // Run
-
-  if (!selection.isEmpty) {
-    // Get setting for grid type
-    var amount_point_grid = sketch__WEBPACK_IMPORTED_MODULE_0__["Settings"].documentSettingForKey(document, 'gridType') || 8; // !important Specify type which gets snapped in manifests identifiers
-
-    var commands = [context.command.identifier().replace('snap-', '')]; // Split up if there are multiple types to snap to
-
-    commands = commands[0].split("-"); // Snap
-
-    commands.forEach(function (type) {
-      selection.layers.forEach(function (layer) {
-        var key = "frame";
-
-        if (type == "lineHeight" || type == "fontSize") {
-          key = "style";
-        }
-
-        if (layer[key][type]) {
-          var offset = layer[key][type] % amount_point_grid;
-
-          if (offset < 4) {
-            layer[key][type] -= offset;
-          } else {
-            layer[key][type] += amount_point_grid - offset;
-          }
-        }
-      });
-    }); // Message
-
-    sketch__WEBPACK_IMPORTED_MODULE_0__["UI"].message("👌Snap!");
-  } else {
-    sketch__WEBPACK_IMPORTED_MODULE_0__["UI"].message("It seems you haven't selected any layers");
-  }
-}
 function settings(context) {
-  var document = sketch__WEBPACK_IMPORTED_MODULE_0__["Document"].getSelectedDocument();
-  sketch__WEBPACK_IMPORTED_MODULE_0__["UI"].getInputFromUser("Change point grid setting", {
-    type: sketch__WEBPACK_IMPORTED_MODULE_0__["UI"].INPUT_TYPE.selection,
-    possibleValues: ['8pt Grid', '10pt Grid', '12pt Grid', '16pt Grid'],
-    initialValue: (sketch__WEBPACK_IMPORTED_MODULE_0__["Settings"].documentSettingForKey(document, 'gridType') || 8) + 'pt Grid'
-  }, function (err, value) {
-    if (err) {
-      // most likely the user canceled the input
-      return;
-    }
-
-    var point_value = value.split('pt Grid')[0];
-    sketch__WEBPACK_IMPORTED_MODULE_0__["Settings"].setDocumentSettingForKey(document, 'gridType', point_value || 8);
-  });
+  sketch__WEBPACK_IMPORTED_MODULE_0__["Settings"].setGlobalSettingForKey('gridType', 10);
+  console.log(sketch__WEBPACK_IMPORTED_MODULE_0__["Settings"].globalSettingForKey('gridType'));
 }
 
 /***/ }),
@@ -191,15 +140,6 @@ module.exports = require("sketch");
     }
   }
 }
-globalThis['snap'] = __skpm_run.bind(this, 'snap');
-globalThis['onRun'] = __skpm_run.bind(this, 'default');
-globalThis['snap'] = __skpm_run.bind(this, 'snap');
-globalThis['snap'] = __skpm_run.bind(this, 'snap');
-globalThis['snap'] = __skpm_run.bind(this, 'snap');
-globalThis['snap'] = __skpm_run.bind(this, 'snap');
-globalThis['snap'] = __skpm_run.bind(this, 'snap');
-globalThis['snap'] = __skpm_run.bind(this, 'snap');
-globalThis['snap'] = __skpm_run.bind(this, 'snap');
-globalThis['settings'] = __skpm_run.bind(this, 'settings')
+globalThis['onRun'] = __skpm_run.bind(this, 'default')
 
-//# sourceMappingURL=__snap.js.map
+//# sourceMappingURL=__settings.js.map
