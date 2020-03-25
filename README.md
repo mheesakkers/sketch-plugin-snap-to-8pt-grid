@@ -33,3 +33,4 @@ _This plugin was created using `skpm`. For a detailed explanation on how things 
 
 - Snapping of paths
 - Add keyboard shortcuts
+- Change pt/px amount of snapping (for example 10pt grid)
