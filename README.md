@@ -2,7 +2,8 @@
 
 # Snap to 8pt Grid
 
-A Sketch plugin which helps with snapping layer properties to the 8 point grid.
+A Sketch plugin which helps with snapping layer properties to the 8 point grid. 
+It's also possible to change to other point grids like a 10 point grid. This can be altered via the settings of the plugin menu.
 
 <img src="https://github.com/mheesakkers/sketch-plugin-snap-to-8pt-grid/blob/master/assets/screengrab.gif?raw=true" alt="screengrab" style="max-width:100%;">
 
@@ -33,4 +34,4 @@ _This plugin was created using `skpm`. For a detailed explanation on how things 
 
 - Snapping of paths
 - Add keyboard shortcuts
-- Change pt/px amount of snapping (for example 10pt grid)
+- ~~Change pt/px amount of snapping (for example 10pt grid)~~

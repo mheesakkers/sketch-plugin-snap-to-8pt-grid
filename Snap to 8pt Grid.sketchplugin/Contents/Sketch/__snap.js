@@ -140,7 +140,7 @@ function snap(context) {
       });
     }); // Message
 
-    sketch__WEBPACK_IMPORTED_MODULE_0__["UI"].message("👌Snap!");
+    sketch__WEBPACK_IMPORTED_MODULE_0__["UI"].message("👌Snapped to " + amount_point_grid + "pt grid!");
   } else {
     sketch__WEBPACK_IMPORTED_MODULE_0__["UI"].message("It seems you haven't selected any layers");
   }
@@ -149,7 +149,7 @@ function settings(context) {
   var document = sketch__WEBPACK_IMPORTED_MODULE_0__["Document"].getSelectedDocument();
   sketch__WEBPACK_IMPORTED_MODULE_0__["UI"].getInputFromUser("Change point grid setting", {
     type: sketch__WEBPACK_IMPORTED_MODULE_0__["UI"].INPUT_TYPE.selection,
-    possibleValues: ['8pt Grid', '10pt Grid', '12pt Grid', '16pt Grid'],
+    possibleValues: ['2pt Grid', '4pt Grid', '8pt Grid', '10pt Grid', '12pt Grid', '16pt Grid'],
     initialValue: (sketch__WEBPACK_IMPORTED_MODULE_0__["Settings"].documentSettingForKey(document, 'gridType') || 8) + 'pt Grid'
   }, function (err, value) {
     if (err) {

@@ -38,7 +38,7 @@ export function snap (context) {
 		})
 
 		// Message
-		UI.message("👌Snap!")
+		UI.message("👌Snapped to " + amount_point_grid + "pt grid!")
 
 	} else {
 		UI.message("It seems you haven't selected any layers")
@@ -53,7 +53,7 @@ export function settings (context) {
 	  "Change point grid setting",
 	  {
 	    type: UI.INPUT_TYPE.selection,
-	    possibleValues: ['8pt Grid', '10pt Grid', '12pt Grid', '16pt Grid'],
+	    possibleValues: ['2pt Grid', '4pt Grid', '8pt Grid', '10pt Grid', '12pt Grid', '16pt Grid'],
 	    initialValue: (Settings.documentSettingForKey(document, 'gridType') || 8) + 'pt Grid'
 	  },
 	  (err, value) => {
