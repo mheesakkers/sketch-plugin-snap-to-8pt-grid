@@ -27,7 +27,7 @@ export function snap (context) {
 
 				if (layer[key][type]) {
 					let offset = layer[key][type] % amount_point_grid
-					if (offset < 4) {
+					if (offset < (amount_point_grid * 0.5)) {
 						layer[key][type] -= offset
 					} else {
 		      	layer[key][type] += (amount_point_grid - offset)
@@ -53,7 +53,7 @@ export function settings (context) {
 	  "Change point grid setting",
 	  {
 	    type: UI.INPUT_TYPE.selection,
-	    possibleValues: ['2pt Grid', '4pt Grid', '8pt Grid', '10pt Grid', '12pt Grid', '16pt Grid'],
+	    possibleValues: ['2pt Grid', '4pt Grid', '6pt Grid', '8pt Grid', '10pt Grid', '12pt Grid', '16pt Grid'],
 	    initialValue: (Settings.documentSettingForKey(document, 'gridType') || 8) + 'pt Grid'
 	  },
 	  (err, value) => {

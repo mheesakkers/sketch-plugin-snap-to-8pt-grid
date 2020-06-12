@@ -131,7 +131,7 @@ function snap(context) {
         if (layer[key][type]) {
           var offset = layer[key][type] % amount_point_grid;
 
-          if (offset < 4) {
+          if (offset < amount_point_grid * 0.5) {
             layer[key][type] -= offset;
           } else {
             layer[key][type] += amount_point_grid - offset;
@@ -149,7 +149,7 @@ function settings(context) {
   var document = sketch__WEBPACK_IMPORTED_MODULE_0__["Document"].getSelectedDocument();
   sketch__WEBPACK_IMPORTED_MODULE_0__["UI"].getInputFromUser("Change point grid setting", {
     type: sketch__WEBPACK_IMPORTED_MODULE_0__["UI"].INPUT_TYPE.selection,
-    possibleValues: ['2pt Grid', '4pt Grid', '8pt Grid', '10pt Grid', '12pt Grid', '16pt Grid'],
+    possibleValues: ['2pt Grid', '4pt Grid', '6pt Grid', '8pt Grid', '10pt Grid', '12pt Grid', '16pt Grid'],
     initialValue: (sketch__WEBPACK_IMPORTED_MODULE_0__["Settings"].documentSettingForKey(document, 'gridType') || 8) + 'pt Grid'
   }, function (err, value) {
     if (err) {
